@@ -11,15 +11,23 @@
   </head>
   <body>
  <table border="1">
-    <tr>
-          <td><img src="img/London_Big_Ben_Phone_box.jpg" alt="Imagen 1" class="img-lateral" width="100" height="200" /></td>
-          <td rowspan="2"><img src="img/Paris.jpg" alt="Imagen Principal" class="img-central" width="250" height="500" /></td>
-          <td><img src="img/TdT_10032020_elPais_Madrid.jpg" alt="Imagen Lateral 2" class="img-lateral"  width="100" height="200" /></td>
-    </tr>
-    <tr>
-         <td><img src="img/roma.jpg" alt="Imagen Lateral 3" class="img-lateral"  width="100" height="200" /></td>
-          <td><img src="img/canales-en-amsterdam.jpg" alt="Imagen Lateral 4" class="img-lateral"  width="100" height="200"  /></td>
-    </tr>
-    </table>
+<tr>
+<!-- 1. Celda lateral superior izquierda -->
+<td><img src="img/London_Big_Ben_Phone_box.jpg" alt="Imagen 1" width="200" height="100" /></td>
+
+<!-- 2. Celda central grande que ocupa 2 filas -->
+<td rowspan="2"><img src="img/paris.jpg" alt="Imagen Principal" width="500" height="250" /></td>
+
+<!-- 3. Celda lateral superior derecha -->
+<td><img src="img/roma.jpg" alt="Imagen Lateral 2" width="200" height="100" /></td>
+</tr>
+<tr>
+<!-- 4. Celda lateral inferior izquierda -->
+<td><img src="img/TdT_10032020_elPais_Madrid.jpg" alt="Imagen Lateral 3" width="200" height="100" /></td>
+
+<!-- 5. Celda lateral inferior derecha (la del centro no se pone aquí porque la ocupa el rowspan de arriba) -->
+<td><img src="img/canales-en-amsterdam.jpg" alt="Imagen Lateral 4" width="200" height="100" /></td>
+</tr>
+</table>
   </body>
 </html>
