@@ -3,24 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice Principal de Proyectos</title>
+    <title>Ejercicio 1 - Formato y Listas</title>
 </head>
 <body>
-    <header>
-        <h1>Mis Proyectos DAM - GitHub Pages</h1>
-    </header>
+    <h1>Ejercicio 1: Elementos para Dar Formato y Listas</h1>
 
-    <main>
-        <!-- Menú de navegación principal -->
-        <nav>
-            <h2>Boletín 1</h2>
-            <ul>
-                <li><a href="boletin1/ejercicio1.html">Ejercicio 1: Dar Formato y Listas</a></li>
-                <li><a href="boletin1/ejercicio2.html">Ejercicio 2: Creación de Tablas Complejas</a></li>
-                <li><a href="boletin1/ejercicio3.html">Ejercicio 3: Enlaces, Marcadores e Imágenes</a></li>
-                <li><a href="boletin1/multimedia.html">Ejercicio 5: Elementos Embebidos y Contenido Multimedia</a></li>
-            </ul>
-        </nav>
-    </main>
+    <!-- Formato de texto -->
+    <section>
+        <h2>Formato de Texto</h2>
+        <p>Es <strong>muy importante</strong> aprender a programar en el ciclo DAM.</p>
+        <p>Debemos poner <em>énfasis</em> en escribir código limpio.</p>
+        <p>Recuerda <mark>resaltar los conceptos clave</mark> durante el estudio.</p>
+        <p>Para mostrar una variable en consola usamos <code>console.log()</code>.</p>
+        <p><small>Nota: Este contenido está sujeto a revisiones periódicas.</small></p>
+    </section>
+
+    <!-- Lista desordenada -->
+    <section>
+        <h2>Tecnologías a aprender en DAM</h2>
+        <ul>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>SQL</li>
+            <li>HTML5 / CSS3</li>
+        </ul>
+    </section>
+
+    <!-- Lista ordenada -->
+    <section>
+        <h2>Pasos para Git Commit y Push</h2>
+        <ol>
+            <li>Ejecutar <code>git status</code> para verificar los cambios.</li>
+            <li>Añadir los archivos al área de preparación con <code>git add .</code></li>
+            <li>Crear el commit con un mensaje descriptivo: <code>git commit -m "Mensaje"</code></li>
+            <li>Subir los cambios al repositorio remoto con <code>git push origin main</code></li>
+        </ol>
+    </section>
+
+    <!-- Lista de definición -->
+    <section>
+        <h2>Glosario de Términos</h2>
+        <dl>
+            <dt><strong>HTML</strong></dt>
+            <dd>Lenguaje de marcado utilizado para estructurar el contenido de las páginas web.</dd>
+            
+            <dt><strong>CSS</strong></dt>
+            <dd>Lenguaje de estilos empleado para diseñar y dar formato visual al documento HTML.</dd>
+            
+            <dt><strong>DOM</strong></dt>
+            <dd>Interfaz de programación (Document Object Model) que representa el documento HTML como un árbol de nodos.</dd>
+        </dl>
+    </section>
+
+    <footer>
+        <p><a href="../index.html">Volver al Índice Principal</a></p>
+    </footer>
 </body>
 </html>

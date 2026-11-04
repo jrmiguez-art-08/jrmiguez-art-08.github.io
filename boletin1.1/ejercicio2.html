@@ -3,60 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1 - Formato y Listas</title>
+    <title>Ejercicio 2 - Horario LMSGI y DAM</title>
 </head>
 <body>
-    <h1>Ejercicio 1: Elementos para Dar Formato y Listas</h1>
+    <h1>Ejercicio 2: Creación de Tablas Complejas</h1>
 
-    <!-- Formato de texto -->
-    <section>
-        <h2>Formato de Texto</h2>
-        <p>Es <strong>muy importante</strong> aprender a programar en el ciclo DAM.</p>
-        <p>Debemos poner <em>énfasis</em> en escribir código limpio.</p>
-        <p>Recuerda <mark>resaltar los conceptos clave</mark> durante el estudio.</p>
-        <p>Para mostrar una variable en consola usamos <code>console.log()</code>.</p>
-        <p><small>Nota: Este contenido está sujeto a revisiones periódicas.</small></p>
-    </section>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>08:00 - 09:00</th>
+                <td colspan="2">LMSGI</td>
+                <td>Programación</td>
+                <td>Bases de Datos</td>
+                <td>Sistemas Informáticos</td>
+            </tr>
+            <tr>
+                <th>09:00 - 10:00</th>
+                <td>Sistemas Informáticos</td>
+                <td>Programación</td>
+                <td>LMSGI</td>
+                <td>Bases de Datos</td>
+                <td>Entornos de Desarrollo</td>
+            </tr>
+            <tr>
+                <th>10:00 - 10:30</th>
+                <td colspan="5" rowspan="1" align="center"><strong>DESCANSO / RECREO</strong></td>
+            </tr>
+            <tr>
+                <th>10:30 - 11:30</th>
+                <td>Programación</td>
+                <td>Bases de Datos</td>
+                <td colspan="2">Programación</td>
+                <td>LMSGI</td>
+            </tr>
+            <tr>
+                <th>11:30 - 12:30</th>
+                <td>Entornos de Desarrollo</td>
+                <td>FOL</td>
+                <td>Bases de Datos</td>
+                <td>Sistemas Informáticos</td>
+                <td>FOL</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" align="center"><strong>Total de Horas Semanales: 30 Horas Lectivas</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 
-    <!-- Lista desordenada -->
-    <section>
-        <h2>Tecnologías a aprender en DAM</h2>
-        <ul>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>SQL</li>
-            <li>HTML5 / CSS3</li>
-        </ul>
-    </section>
-
-    <!-- Lista ordenada -->
-    <section>
-        <h2>Pasos para Git Commit y Push</h2>
-        <ol>
-            <li>Ejecutar <code>git status</code> para verificar los cambios.</li>
-            <li>Añadir los archivos al área de preparación con <code>git add .</code></li>
-            <li>Crear el commit con un mensaje descriptivo: <code>git commit -m "Mensaje"</code></li>
-            <li>Subir los cambios al repositorio remoto con <code>git push origin main</code></li>
-        </ol>
-    </section>
-
-    <!-- Lista de definición -->
-    <section>
-        <h2>Glosario de Términos</h2>
-        <dl>
-            <dt><strong>HTML</strong></dt>
-            <dd>Lenguaje de marcado utilizado para estructurar el contenido de las páginas web.</dd>
-            
-            <dt><strong>CSS</strong></dt>
-            <dd>Lenguaje de estilos empleado para diseñar y dar formato visual al documento HTML.</dd>
-            
-            <dt><strong>DOM</strong></dt>
-            <dd>Interfaz de programación (Document Object Model) que representa el documento HTML como un árbol de nodos.</dd>
-        </dl>
-    </section>
-
-    <footer>
-        <p><a href="../index.html">Volver al Índice Principal</a></p>
-    </footer>
+    <br>
+    <p><a href="../index.html">Volver al Índice Principal</a></p>
 </body>
 </html>
