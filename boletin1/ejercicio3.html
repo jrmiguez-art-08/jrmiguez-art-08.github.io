@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Navegación, Enlaces e Imágenes</title>
+</head>
+<body>
+    <!-- Marcador de inicio -->
+    <header id="inicio">
+        <h1>Ejercicio 3: Enlaces, Marcadores e Imágenes</h1>
+        
+        <!-- Menú de navegación interna -->
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Ir a Sección 1: Introducción</a></li>
+                <li><a href="#seccion2">Ir a Sección 2: Galería de Imágenes</a></li>
+                <li><a href="#seccion3">Ir a Sección 3: Enlaces Externos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Sección 1 -->
+        <section id="seccion1">
+            <h2>Sección 1: Introducción</h2>
+            <p>Esta es la primera sección del documento estructurado con marcadores de navegación interna. Permite desplazarse fácilmente por la página web sin necesidad de hacer scroll manual.</p>
+            <p><a href="#inicio">Volver arriba</a></p>
+        </section>
+
+        <hr>
+
+        <!-- Sección 2 -->
+        <section id="seccion2">
+            <h2>Sección 2: Galería de Imágenes</h2>
+            
+            <h3>Imagen Relativa Local</h3>
+            <img src="img/local.jpg" alt="Imagen representativa local" title="Foto desde la carpeta img" width="300" height="200">
+
+            <h3>Imagen desde URL Externa</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Imagen placeholder de prueba" title="Imagen servida externamente" width="300" height="200">
+
+            <br><br>
+            <p><a href="#inicio">Volver arriba</a></p>
+        </section>
+
+        <hr>
+
+        <!-- Sección 3 -->
+        <section id="seccion3">
+            <h2>Sección 3: Enlaces Externos e Internos</h2>
+            <p>
+                Puedes consultar la documentación oficial en 
+                <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.
+            </p>
+            <p>
+                <a href="../index.html">Volver al menú principal (index.html)</a>
+            </p>
+            <p><a href="#inicio">Volver arriba</a></p>
+        </section>
+    </main>
+</body>
+</html>
