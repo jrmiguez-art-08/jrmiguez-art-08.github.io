@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Preferencias de Desarrollo</title>
+</head>
+<body>
+
+    <h1>Encuesta de Preferencias de Desarrollo</h1>
+
+    <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="POST">
+
+        <fieldset>
+            <legend>Datos Académicos</legend>
+
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="ciclo">Ciclo Formativo:</label>
+            <select id="ciclo" name="ciclo">
+                <option value="DAM" selected>DAM</option>
+                <option value="DAW">DAW</option>
+                <option value="ASIR">ASIR</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferencias Técnicas</legend>
+
+            <p>Lenguaje principal:</p>
+            <input type="radio" id="java" name="lenguaje" value="Java">
+            <label for="java">Java</label><br>
+
+            <input type="radio" id="python" name="lenguaje" value="Python">
+            <label for="python">Python</label><br>
+
+            <input type="radio" id="csharp" name="lenguaje" value="C#">
+            <label for="csharp">C#</label><br>
+
+            <input type="radio" id="js" name="lenguaje" value="JavaScript">
+            <label for="js">JavaScript</label>
+            <br><br>
+
+            <p>Entornos de trabajo habituales:</p>
+            <input type="checkbox" id="linux" name="entornos[]" value="Linux">
+            <label for="linux">Linux</label><br>
+
+            <input type="checkbox" id="windows" name="entornos[]" value="Windows">
+            <label for="windows">Windows</label><br>
+
+            <input type="checkbox" id="macos" name="entornos[]" value="macOS">
+            <label for="macos">macOS</label>
+            <br><br>
+
+            <label for="comentarios">Comentarios / Experiencia previa:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="reset">Restablecer</button>
+        <button type="submit">Enviar datos</button>
+
+    </form>
+
+</body>
+</html>

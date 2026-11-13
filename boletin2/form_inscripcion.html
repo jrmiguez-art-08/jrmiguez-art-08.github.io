@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Evento Tech - Hackathon</title>
+</head>
+<body>
+
+    <h1>Inscripción a Evento Tech (Hackathon)</h1>
+
+    <form action="https://lm.ciclo.iesnervion.es/inscripcion.php" method="POST" enctype="multipart/form-data">
+        
+        <p>
+            <label for="equipo">Nombre del Equipo:</label><br>
+            <input type="text" id="equipo" name="equipo" autofocus required>
+        </p>
+
+        <p>
+            <label for="codigo_registro">Código de Registro:</label><br>
+            <input type="text" id="codigo_registro" name="codigo_registro" value="HACK-2026-SEV" readonly>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha de llegada:</label><br>
+            <input type="date" id="fecha" name="fecha" min="2026-12-01" max="2026-12-15">
+        </p>
+
+        <p>
+            <label for="hora">Hora de presentación:</label><br>
+            <input type="time" id="hora" name="hora">
+        </p>
+
+        <p>
+            <label for="color">Color identificativo del equipo:</label><br>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label for="nivel_java">Nivel estimado de Java (0 a 100):</label><br>
+            <input type="range" id="nivel_java" name="nivel_java" min="0" max="100" step="5">
+        </p>
+
+        <p>
+            <label for="expediente">Subir Expediente / CV (solo PDF):</label><br>
+            <input type="file" id="expediente" name="expediente" accept=".pdf">
+        </p>
+
+        <p>
+            <button type="submit">Enviar inscripción</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
